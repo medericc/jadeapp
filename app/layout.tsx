@@ -1,6 +1,7 @@
 import './globals.css';
 import { Analytics } from "@vercel/analytics/react";
 import Head from 'next/head';
+import ServiceWorkerRegister from './ServiceWorkerRegister';
 
 export const metadata = {
   title: "Jade Célérier - Application",
@@ -49,7 +50,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="theme-color" content="#1e40af" />
       </Head>
 
-     <body>{children}</body>
+     <body>{children}
+
+     {/* Analytics */}
+        <Analytics />
+
+        {/* ✅ Enregistrement du Service Worker */}
+        <ServiceWorkerRegister />
+    
+
+     </body>
     </html>
   )
 }
