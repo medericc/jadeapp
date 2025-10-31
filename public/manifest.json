@@ -1,6 +1,6 @@
 {
-  "name": "Jade Schedule",
-  "short_name": "Jade",
+  "name": "Jade App",
+  "short_name": "Jade App",
   "start_url": "/?source=pwa",
   "scope": "/",
   "display": "standalone",

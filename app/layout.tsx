@@ -3,11 +3,11 @@ import { Analytics } from "@vercel/analytics/react";
 import Head from 'next/head';
 
 export const metadata = {
-  title: "Calendrier de Jade - Dodge City",
-  description: "Le calendrier des matchs de Jade.",
+  title: "Jade Célérier - Application",
+  description: "Statistiques en direct et calendrier de Jade",
    manifest: "/manifest.json",
   appleWebApp: {
-    title: "Jade Schedule",
+    title: "Jade App",
   },
   icons: {
     icon: "/favicon.ico",
@@ -15,24 +15,24 @@ export const metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Calendrier de Jade - Dodge City",
-    description: "Le calendrier des matchs de Jade.",
-    url: "https://jade-calendrier.vercel.app/",
-    siteName: "Jade Celerier Schedule",
+    title: "Jade Célérier - Application",
+    description: "Statistiques en direct et calendrier de Jade",
+    url: "https://jade-application.vercel.app/",
+    siteName: "Jade Celerier Application",
     images: [
       {
-        url: "https://jade-calendrier.vercel.app/preview.jpg",
+        url: "https://jade-application.vercel.app/preview.jpg",
         width: 1200,
         height: 630,
-        alt: "Calendrier de Jade - Dodge City",
+        alt: "Jade Célérier - Application",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Calendrier de Jade - Dodge City",
-    description: "Le calendrier des matchs de Jade.",
+    title: "Jade Célérier - Application",
+    description: "Statistiques en direct et calendrier de Jade",
     images: ["https://jade-calendrier.vercel.app/preview.jpg"],
   },
 };
@@ -45,26 +45,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
          
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="apple-mobile-web-app-title" content="Jade Schedule" />
+        <meta name="apple-mobile-web-app-title" content="Jade Application" />
         <meta name="theme-color" content="#1e40af" />
       </Head>
 
-      <body className="min-h-screen bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900 dark:to-purple-800 text-gray-900 dark:text-white">
-        <header className="bg-gradient-to-r from-purple-800 via-purple-700 to-purple-600 text-white p-6 md:p-8 text-3xl sm:text-3xl font-bold text-center shadow-lg tracking-wide">
-          
-          {/* Mobile */}
-          <span className="sm:hidden">🏀 JADE SCHEDULE</span>
-
-          {/* Tablette */}
-          <span className="hidden sm:inline lg:hidden">🏀 CALENDRIER DE JADE</span>
-
-          {/* Ordinateur */}
-          <span className="hidden lg:inline">🏀 CALENDRIER DE JADE - DODGE CITY</span>
-        </header>
-
-        <main className="container mx-auto mt-6 px-4">{children}</main>
-        <Analytics />
-      </body>
+     <body>{children}</body>
     </html>
-  );
+  )
 }
