@@ -25,7 +25,7 @@ export default function Home() {
             href="https://jade-livestats.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full p-6 rounded-2xl shadow-2xl bg-gradient-to-r from-white to-purple-200 border-2 border-white/20 text-center transform transition-transform hover:scale-105"
+            className="block  w-full p-6 rounded-2xl shadow-2xl bg-gradient-to-r from-white to-purple-200 border-2 border-white/20 text-center transform transition-transform hover:scale-105"
           >
             
             <h2 className="text-2xl font-bold text-purple-900 mb-2">LIVE STATS</h2>
